@@ -1,0 +1,83 @@
+name: Bug report
+description: Something in Dune Pulse isn't working.
+labels: [bug]
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. This repository is **public**: please leave out character and account names, IP addresses and personal file paths, and replace them with something neutral ("my character", "my PC").
+
+        A **security** problem? Don't open an issue: report it privately as [SECURITY.md](https://github.com/Ferretech-Interactive/dune-pulse/blob/main/SECURITY.md) describes. Values that stopped after a **Dune: Awakening patch**? Use the **Game update** form.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where is the problem?
+      options:
+        - Installing, updating or removing
+        - Dune Pulse won't start or connect
+        - Wrong or missing values in the dashboard
+        - Character select / remembered characters
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Include the exact message or status Dune Pulse showed (for example "Waiting for game").
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Start Dune: Awakening and load into the world
+        2. Open Dune Pulse
+        3. …
+  - type: input
+    id: version
+    attributes:
+      label: Dune Pulse version
+      description: From **About**, or the setup file name.
+      placeholder: 0.1.62-beta
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      description: Run `winver`.
+      placeholder: Windows 11 25H2, build 26200
+  - type: dropdown
+    id: game
+    attributes:
+      label: Was the game running?
+      options:
+        - In the world
+        - On the main menu / character select
+        - Loading
+        - Not running
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log lines (optional)
+      description: |
+        Helpful logs: the **LOGS** tab in Dune Pulse; for install problems, `%ProgramData%\DunePulse\Setup\launcher.log` and the newest `setup-*.log`. Paste only the relevant lines, and remove names and paths first.
+      render: text
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before submitting
+      options:
+        - label: I removed personal details (character and account names, IPs, personal paths).
+          required: true
+        - label: This is not a security vulnerability.
+          required: true

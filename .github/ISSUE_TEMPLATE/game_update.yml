@@ -1,0 +1,64 @@
+name: Game update
+description: "A Dune: Awakening patch stopped or changed what Dune Pulse shows."
+title: "[Game update] "
+labels: [game-update]
+type: Game update
+body:
+  - type: markdown
+    attributes:
+      value: |
+        After a patch, Dune Pulse tries to find its way around the new game version by itself. When it can't, it says the build is unsupported and reads nothing. That's expected and safe, but tell us so we can support the new version.
+
+        Leave out character and account names. Never attach memory dumps or anti-cheat logs.
+  - type: input
+    id: patch
+    attributes:
+      label: Game patch
+      description: "The patch name or date, and the Steam build ID if you know it (Steam → Dune: Awakening → Properties → Updates)."
+      placeholder: "Patch of 2026-10-21, build 26050941"
+    validations:
+      required: true
+  - type: dropdown
+    id: symptom
+    attributes:
+      label: What happened?
+      options:
+        - Dune Pulse says the build is unsupported (nothing is read)
+        - Values are wrong
+        - Some values are missing, others are fine
+        - Everything is missing
+        - Other
+    validations:
+      required: true
+  - type: checkboxes
+    id: affected
+    attributes:
+      label: Affected
+      options:
+        - label: Vitals (health, water, stamina, …)
+        - label: Position or map
+        - label: Vehicle
+        - label: Bases
+        - label: Storm or world
+        - label: Character select
+  - type: input
+    id: version
+    attributes:
+      label: Dune Pulse version
+      description: From **About**.
+      placeholder: 0.1.62-beta
+    validations:
+      required: true
+  - type: textarea
+    id: status
+    attributes:
+      label: Status text and log lines
+      description: The exact status Dune Pulse showed, and the matching lines from its **LOGS** tab. Remove names first.
+      render: text
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before submitting
+      options:
+        - label: I removed personal details and attached no memory dumps.
+          required: true

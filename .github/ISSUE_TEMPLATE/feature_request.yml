@@ -1,0 +1,44 @@
+name: Feature request
+description: Something you'd like Dune Pulse to do.
+labels: [enhancement]
+type: Feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Dune Pulse has deliberate limits: it only **reads** the game, only about **you**, and keeps everything on your PC. It won't show other players, change the game, send input or automate play. An in-game overlay is already planned.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Dashboard
+        - Character select / remembered characters
+        - Map
+        - Progression
+        - Overlay
+        - Bases
+        - Installing and updates
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would it help you do?
+      description: Describe what you're trying to do in the game and what's missing today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Your idea
+    validations:
+      required: true
+  - type: checkboxes
+    id: fit
+    attributes:
+      label: Fit
+      options:
+        - label: It only needs information about my own character, vehicle, bases or world.
+        - label: It doesn't need Dune Pulse to change the game or act for me.
