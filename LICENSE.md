@@ -2,7 +2,7 @@
 
 Copyright (c) 2026 FerreTech Interactive LLC. All rights reserved.
 
-These terms cover Dune Pulse releases (`DunePulseSetup-<version>.exe` and everything it installs) and this repository. By installing or using Dune Pulse, you agree to them. If you don't agree, don't install or use it.
+These terms cover Dune Pulse releases (`DunePulseSetup-<version>.exe` and everything it installs) and the public Dune Pulse repository. By installing or using Dune Pulse, you agree to them. If you don't agree, don't install or use it.
 
 ## 1. What you may do
 
@@ -10,7 +10,7 @@ You may download Dune Pulse free of charge and install and use it on computers y
 
 ## 2. What you may not do
 
-- Get Dune Pulse anywhere other than official sources: the [Releases](../../releases) of this repository and Dune Pulse's own update mechanism.
+- Get Dune Pulse anywhere other than official sources: the [Dune Pulse releases page](https://github.com/Ferretech-Interactive/dune-pulse/releases) and Dune Pulse's own update mechanism.
 - Modify, repackage or redistribute the installer or the installed files, or offer them for download elsewhere.
 - Reverse engineer, decompile or disassemble the proprietary parts (the background service, the game reader and the driver), except where applicable law expressly allows it despite this restriction.
 - Remove or change the copyright, license or trademark notices.
@@ -18,7 +18,7 @@ You may download Dune Pulse free of charge and install and use it on computers y
 
 ## 3. Open-source parts
 
-The desktop app, the setup and the shared formats are licensed under the MIT License. Where the MIT License applies, it governs those parts instead of sections 1 and 2. Third-party software is listed in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+The desktop app, the setup and the shared formats are licensed under the MIT License. Where the MIT License applies, it governs those parts instead of sections 1 and 2. Third-party software is listed in [THIRD-PARTY-NOTICES.md](https://github.com/Ferretech-Interactive/dune-pulse/blob/main/THIRD-PARTY-NOTICES.md).
 
 ## 4. The game and your accounts
 
@@ -44,4 +44,4 @@ FerreTech may update these terms. A new version applies to releases published af
 
 "Dune Pulse" and "FerreTech Interactive" are names of FerreTech Interactive LLC. The Dune Docker name and logo belong to their owner and are used with permission. *Dune: Awakening* is a trademark of its respective owner. These terms grant no right to use any of these names or logos.
 
-The text of this repository (README, forms, policies) may be quoted and linked freely.
+The text of the public Dune Pulse repository (README, forms, policies) may be quoted and linked freely.
